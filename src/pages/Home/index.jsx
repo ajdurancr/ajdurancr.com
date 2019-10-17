@@ -17,4 +17,10 @@ const Home = () => (
   </>
 )
 
+/*
+  Page data loader functions receive a next context object
+  you can find more info here: https://nextjsorg.now.sh/docs/#fetching-data-and-component-lifecycle
+*/
+Home.dataLoader = () => Promise.resolve({ pageData: { test: 'prop' } })
+
 export default Home

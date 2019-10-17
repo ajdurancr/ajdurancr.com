@@ -1,14 +1,12 @@
 /* eslint-disable */
 import React from 'react'
+import App from 'next/app'
 
-import App from '../src/components/App'
-import Router from '../src/components/Router'
-
-
-const NextApp = (props) => (
-  <Router {...props}>
-    <App {...props} />
-  </Router>
-)
+class NextApp extends App {
+  render() {
+    const { Component, pageProps } = this.props
+    return <Component {...pageProps} />
+  }
+}
 
 export default NextApp
