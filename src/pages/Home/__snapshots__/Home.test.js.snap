@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders correctly 1`] = `
+<Fragment>
+  <Head>
+    <title>
+      Home
+    </title>
+  </Head>
+  <Nav />
+  <div
+    className="hero"
+  >
+    <h1
+      className="title"
+    >
+      Coming Soon...
+    </h1>
+  </div>
+</Fragment>
+`;
