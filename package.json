@@ -6,11 +6,24 @@
     "dev": "node server",
     "build": "next build",
     "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
     "prestart": "npm run build",
     "start": "NODE_ENV=production node server",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx}": [
+      "npm run --silent lint:fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
+    }
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
@@ -37,7 +50,9 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "^3.0.9",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "lint-staged": "^9.4.2"
   }
 }
