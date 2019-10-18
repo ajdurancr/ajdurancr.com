@@ -35,7 +35,7 @@ const pageDataLoader = (inputRoutes) => {
   return (nextContext) => {
     const { [nextContext.req.path]: dataLoader } = pageLoadersMap
 
-    if (!dataLoader) return {}
+    if (!dataLoader) return { pageData: {} }
 
     return dataLoader(nextContext)
   }
