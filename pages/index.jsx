@@ -1,49 +1,21 @@
-/* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable react/forbid-prop-types */
-
 import React from 'react'
 import propTypes from 'prop-types'
-import { Route, Switch } from 'react-router-dom'
 
-import get from 'lodash.get'
-import Router from '../src/components/Router'
-import routes from '../routes'
+import { PageContent } from '../src/components'
 
-const App = ({ pageData, ...props }) => (
-  <Router {...props}>
-    <Switch>
-      {routes.map(({ path, exact, component: Page }) => (
-        <Route
-          key={path}
-          path={path}
-          exact={exact}
-          render={(pageProps) => <Page {...pageProps} pageData={pageData} />}
-        />
-      ))}
-    </Switch>
-  </Router>
-)
+const GenericPage = ({ content }) => <PageContent content={content} />
 
-const pageDataLoader = (inputRoutes) => {
-  const pageLoadersMap = inputRoutes.reduce((loadersMap, { path, component }) => {
-    const dataLoader = get(component, 'dataLoader')
-    if (!path || !dataLoader) return loadersMap
+GenericPage.getInitialProps = async ({ query }) => ({ ...query })
 
-    return { ...loadersMap, [path]: dataLoader }
-  }, {})
-
-  return (nextContext) => {
-    const { [nextContext.req.path]: dataLoader } = pageLoadersMap
-
-    if (!dataLoader) return { pageData: {} }
-
-    return dataLoader(nextContext)
-  }
+GenericPage.propTypes = {
+  content: propTypes.shape({
+    content: propTypes.object,
+    site: propTypes.object,
+  }),
 }
 
-App.propTypes = { pageData: propTypes.object }
-App.defaultProps = { pageData: {} }
+GenericPage.defaultProps = {
+  content: {},
+}
 
-App.getInitialProps = pageDataLoader(routes)
-
-export default App
+export default GenericPage

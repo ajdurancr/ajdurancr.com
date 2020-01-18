@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": false,
   "scripts": {
-    "dev": "node server",
     "build": "next build",
-    "lint": "eslint .",
+    "dev": "next",
+    "export": "next export",
+    "lint": "eslint src",
     "lint:fix": "npm run lint -- --fix",
-    "prestart": "npm run build",
-    "start": "NODE_ENV=production node server",
+    "preexport": "npm run build",
+    "prestart": "npm run export",
+    "start": "serve out",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
@@ -27,6 +29,8 @@
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
+    "contentful": "^7.13.1",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "lodash.get": "^4.4.2",
     "next": "9.0.6",
@@ -53,6 +57,7 @@
     "husky": "^3.0.9",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
-    "lint-staged": "^9.4.2"
+    "lint-staged": "^9.4.2",
+    "serve": "^11.3.0"
   }
 }
