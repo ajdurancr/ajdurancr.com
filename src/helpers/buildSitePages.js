@@ -14,7 +14,7 @@ const buildSitePages = (siteInfo) => {
         site,
       },
     },
-  }), {})
+  }), { '/': { page: DEFAULT_PAGE_TYPE } })
 }
 
 module.exports = buildSitePages

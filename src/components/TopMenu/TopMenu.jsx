@@ -3,7 +3,7 @@ import propTypes from 'prop-types'
 import classnames from 'classnames'
 
 import buildSiteMenu from '../../helpers/buildSiteMenu'
-import { getParentPageUrl } from '../../helpers/path'
+import { getParentPageUrl } from '../../helpers/url'
 
 import SubMenu from './SubMenu'
 import styles from './TopMenu.styles.sass'
@@ -41,11 +41,16 @@ TopMenu.defaultProps = {
 TopMenu.propTypes = {
   currentPageUrl: propTypes.string.isRequired,
   menu: propTypes.shape({
-    alias: propTypes.string,
     name: propTypes.string,
-    page: propTypes.object,
-    submenu: propTypes.arrayOf(propTypes.object),
-    url: propTypes.string,
+    submenu: propTypes.arrayOf(
+      propTypes.shape({
+        alias: propTypes.string,
+        name: propTypes.string,
+        page: propTypes.object,
+        submenu: propTypes.arrayOf(propTypes.object),
+        url: propTypes.string,
+      }),
+    ),
   }),
 }
 
