@@ -4,12 +4,12 @@ import get from 'lodash.get'
 
 import { Menu } from '..'
 
-const Header = ({ currentPageUrl, menu }) => (
-  <Menu currentPageUrl={currentPageUrl} menu={get(menu, 'fields')} />
+const Header = ({ pageUrl, menu }) => (
+  <Menu pageUrl={pageUrl} menu={get(menu, 'fields')} />
 )
 
 Header.propTypes = {
-  currentPageUrl: propTypes.string.isRequired,
+  pageUrl: propTypes.string.isRequired,
   menu: propTypes.object.isRequired,
 }
 

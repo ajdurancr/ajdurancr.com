@@ -1,15 +1,14 @@
-const get = require('lodash.get')
-
 const buildSitePages = (siteInfo) => {
   const { pages, ...site } = siteInfo || {}
 
-  return (pages || []).reduce((pagesObj, page) => ({
+  return (pages || []).reduce((pagesObj, { fields: { url: pageUrl, ...fields } }) => ({
     ...pagesObj,
-    [get(page, 'fields.url')]: {
+    [pageUrl]: {
       page: '/',
       query: {
         site,
-        ...get(page, 'fields'),
+        pageUrl,
+        ...fields,
       },
     },
   }), { '/': { page: '/' } })

@@ -8,8 +8,8 @@ import { getParentPageUrl } from '../../helpers/url'
 import SubMenu from './SubMenu'
 import styles from './Menu.styles.sass'
 
-const Menu = ({ menu, currentPageUrl }) => {
-  const [parentPageUrl, setParentPageUrl] = useState(getParentPageUrl(currentPageUrl))
+const Menu = ({ menu, pageUrl }) => {
+  const [parentPageUrl, setParentPageUrl] = useState(getParentPageUrl(pageUrl))
   const [menuItems, setMenuItems] = useState(buildSiteMenu(menu))
 
   useEffect(() => {
@@ -17,8 +17,8 @@ const Menu = ({ menu, currentPageUrl }) => {
   }, [menu])
 
   useEffect(() => {
-    setParentPageUrl(getParentPageUrl(currentPageUrl))
-  }, [currentPageUrl])
+    setParentPageUrl(getParentPageUrl(pageUrl))
+  }, [pageUrl])
 
   return (
     <nav className={styles.menu}>
@@ -39,7 +39,7 @@ Menu.defaultProps = {
 }
 
 Menu.propTypes = {
-  currentPageUrl: propTypes.string.isRequired,
+  pageUrl: propTypes.string.isRequired,
   menu: propTypes.shape({
     name: propTypes.string,
     submenu: propTypes.arrayOf(

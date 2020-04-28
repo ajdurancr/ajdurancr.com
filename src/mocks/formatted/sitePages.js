@@ -16,7 +16,7 @@ export const sitePagesOutput = {
     page: '/',
     query: {
       name: 'Home',
-      url: '/',
+      pageUrl: '/',
       sections: [],
       site: {
         name: 'DURANCR.IO',
@@ -29,7 +29,7 @@ export const sitePagesOutput = {
     page: '/',
     query: {
       name: 'About',
-      url: '/about',
+      pageUrl: '/about',
       sections: [],
       site: {
         name: 'DURANCR.IO',
@@ -42,7 +42,7 @@ export const sitePagesOutput = {
     page: '/',
     query: {
       name: 'Blog',
-      url: '/blog',
+      pageUrl: '/blog',
       sections: [],
       site: {
         name: 'DURANCR.IO',
@@ -55,7 +55,7 @@ export const sitePagesOutput = {
     page: '/',
     query: {
       name: 'Portfolio',
-      url: '/portfolio',
+      pageUrl: '/portfolio',
       sections: [],
       site: {
         name: 'DURANCR.IO',
@@ -68,7 +68,7 @@ export const sitePagesOutput = {
     page: '/',
     query: {
       name: 'Resume',
-      url: '/resume',
+      pageUrl: '/resume',
       sections: [],
       site: {
         name: 'DURANCR.IO',
@@ -81,7 +81,7 @@ export const sitePagesOutput = {
     page: '/',
     query: {
       name: 'Education',
-      url: '/resume/education',
+      pageUrl: '/resume/education',
       sections: [],
       site: {
         name: 'DURANCR.IO',
@@ -94,7 +94,7 @@ export const sitePagesOutput = {
     page: '/',
     query: {
       name: 'Work Experience',
-      url: '/resume/work-experience',
+      pageUrl: '/resume/work-experience',
       sections: [],
       site: {
         name: 'DURANCR.IO',

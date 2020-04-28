@@ -9,11 +9,11 @@ import { Header } from '../src/components'
 class NextApp extends App {
   render() {
     const { Component, pageProps } = this.props
-    const { name, site, url } = pageProps
+    const { name, site, pageUrl } = pageProps
 
     return (
       <main>
-        <Header currentPageUrl={url} menu={get(site, 'menu')} />
+        <Header pageUrl={pageUrl} menu={get(site, 'menu')} />
         {Boolean(name) && (
           <Head>
             <title>{name}</title>
