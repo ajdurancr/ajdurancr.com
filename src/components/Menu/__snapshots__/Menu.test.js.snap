@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TopMenu renders correctly 1`] = `
+exports[`Menu renders correctly 1`] = `
 <nav
   className="menu"
 >
@@ -95,7 +95,7 @@ exports[`TopMenu renders correctly 1`] = `
 </nav>
 `;
 
-exports[`TopMenu renders correctly when submenu item selected 1`] = `
+exports[`Menu renders correctly when submenu item selected 1`] = `
 <nav
   className="menu"
 >
@@ -190,7 +190,7 @@ exports[`TopMenu renders correctly when submenu item selected 1`] = `
 </nav>
 `;
 
-exports[`TopMenu renders correctly with default props 1`] = `
+exports[`Menu renders correctly with default props 1`] = `
 <nav
   className="menu"
 >

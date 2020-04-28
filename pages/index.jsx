@@ -1,21 +1,20 @@
 import React from 'react'
 import propTypes from 'prop-types'
 
-import { PageContent } from '../src/components'
+import { Page } from '../src/components'
 
-const GenericPage = ({ content }) => <PageContent content={content} />
+const NextPage = (props) => <Page {...props} />
 
-GenericPage.getInitialProps = async ({ query }) => ({ ...query })
+NextPage.getInitialProps = async ({ query }) => ({ ...query })
 
-GenericPage.propTypes = {
-  content: propTypes.shape({
-    content: propTypes.object,
-    site: propTypes.object,
-  }),
+NextPage.propTypes = {
+  sections: propTypes.arrayOf(propTypes.object),
+  site: propTypes.object,
 }
 
-GenericPage.defaultProps = {
-  content: {},
+NextPage.defaultProps = {
+  sections: [],
+  site: {},
 }
 
-export default GenericPage
+export default NextPage

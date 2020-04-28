@@ -1,11 +1,11 @@
 import pages from './pages'
-import topMenu from './topMenu'
+import menu from './menu'
 
 export default {
   fields: {
     name: 'DURANCR.IO',
     id: 1,
-    topMenu,
+    menu,
     pages,
   },
 }

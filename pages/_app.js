@@ -4,19 +4,19 @@ import App from 'next/app'
 import Head from 'next/head'
 import get from 'lodash.get'
 
-import { TopMenu } from '../src/components'
+import { Header } from '../src/components'
 
 class NextApp extends App {
   render() {
     const { Component, pageProps } = this.props
-    const { content, site } = pageProps
+    const { name, site, url } = pageProps
 
     return (
       <main>
-        <TopMenu currentPageUrl={get(content, 'url')} menu={get(site, 'topMenu.fields')} />
-        {Boolean(content) && (
+        <Header currentPageUrl={url} menu={get(site, 'menu')} />
+        {Boolean(name) && (
           <Head>
-            <title>{content.name}</title>
+            <title>{name}</title>
           </Head>
         )}
         <Component {...pageProps} />

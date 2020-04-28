@@ -1,4 +1,7 @@
-/* eslint-disable import/prefer-default-export */
 
-export { default as PageContent } from './PageContent/PageContent'
-export { default as TopMenu } from './TopMenu/TopMenu'
+export { default as Component } from './Component'
+export { default as Header } from './Header'
+export { default as Menu } from './Menu'
+export { default as Page } from './Page'
+export { default as Section } from './Section'
+export { default as TestComponent } from './TestComponent'

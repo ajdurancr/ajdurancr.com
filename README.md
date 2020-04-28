@@ -1,5 +1,5 @@
-# durancr-io
-This is a personal project running on [durancr.io](https://durancr.io/) and built using [React](https://reactjs.org/), [Next.JS](https://nextjs.org/), [Jest](https://jestjs.io/), [Enzyme](https://airbnb.io/enzyme/) and [Contentful](https://www.contentful.com/).
+# ajdurancr.com
+This is a personal project running on [ajdurancr.com](https://ajdurancr.com/) and built using [React](https://reactjs.org/), [Next.JS](https://nextjs.org/), [Jest](https://jestjs.io/), [Enzyme](https://airbnb.io/enzyme/) and [Contentful](https://www.contentful.com/).
 
 The coding style used in this repo is based on Airbnb Style Guide for JavaScript and React.
 
@@ -10,8 +10,8 @@ In order to start this project it is necessary to go through the following steps
 Comming soon...
 
 ### 2. Cloning project and installing dependencies
-- clone this project: `git clone https://github.com/ajdurancr/durancr-io.git`
-- step into the project's folder: `cd durancr-io`
+- clone this project: `git clone https://github.com/ajdurancr/ajdurancr.com.git`
+- step into the project's folder: `cd ajdurancr.com`
 - install the project's dependencies: `npm install`
 
 ### 3. Setting up environment variables for contentful client

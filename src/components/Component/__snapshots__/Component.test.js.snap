@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component renders correctly 1`] = `
+<TestComponent
+  componentDescription="This is a test component"
+  contentType="Test Component"
+  markdownField="Test value"
+  name="TestComponent"
+  title="This is a test title"
+>
+  <Component />
+</TestComponent>
+`;
+
+exports[`Component renders correctly unknown component 1`] = `""`;

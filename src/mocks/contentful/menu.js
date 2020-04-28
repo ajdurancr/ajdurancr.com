@@ -87,7 +87,6 @@ export const submenu = [
   },
 ]
 
-
 export default {
   fields: {
     name: 'Top Menu',

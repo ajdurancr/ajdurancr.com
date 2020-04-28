@@ -1,4 +1,4 @@
-/* helpers/buildSiteMenu output: buildSiteMenu(topMenu.fields) */
+/* helpers/buildSiteMenu output: buildSiteMenu(menu.fields) */
 export const submenuOutput = [
   {
     url: '/resume/education',

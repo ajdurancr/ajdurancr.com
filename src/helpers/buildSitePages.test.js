@@ -5,7 +5,7 @@ import { testInputPages, sitePagesOutput } from '../mocks/formatted/sitePages'
 describe('helpers/buildSitePages', () => {
   it('returns pages export map', () => {
     expect(
-      buildSitePages({ ...site.fields, topMenu: {}, pages: testInputPages }),
+      buildSitePages({ ...site.fields, menu: {}, pages: testInputPages }),
     ).toEqual(sitePagesOutput)
   })
 })

@@ -1,10 +1,13 @@
 import components from './components'
 
-export default [
-  {
-    fields: {
-      components,
-      name: 'Main Section',
-    },
+export const section = {
+  sys: {
+    id: 'sectionId',
   },
-]
+  fields: {
+    components,
+    name: 'Main Section',
+  },
+}
+
+export default [section]

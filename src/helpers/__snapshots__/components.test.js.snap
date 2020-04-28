@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`helpers/components getComponentsMap builds a map with all components 1`] = `
+Object {
+  "default": Object {
+    "ChildComponent": [Function],
+    "TestComponent": [Function],
+  },
+}
+`;

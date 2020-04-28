@@ -6,9 +6,9 @@ import buildSiteMenu from '../../helpers/buildSiteMenu'
 import { getParentPageUrl } from '../../helpers/url'
 
 import SubMenu from './SubMenu'
-import styles from './TopMenu.styles.sass'
+import styles from './Menu.styles.sass'
 
-const TopMenu = ({ menu, currentPageUrl }) => {
+const Menu = ({ menu, currentPageUrl }) => {
   const [parentPageUrl, setParentPageUrl] = useState(getParentPageUrl(currentPageUrl))
   const [menuItems, setMenuItems] = useState(buildSiteMenu(menu))
 
@@ -34,11 +34,11 @@ const TopMenu = ({ menu, currentPageUrl }) => {
   )
 }
 
-TopMenu.defaultProps = {
+Menu.defaultProps = {
   menu: {},
 }
 
-TopMenu.propTypes = {
+Menu.propTypes = {
   currentPageUrl: propTypes.string.isRequired,
   menu: propTypes.shape({
     name: propTypes.string,
@@ -54,4 +54,4 @@ TopMenu.propTypes = {
   }),
 }
 
-export default TopMenu
+export default Menu

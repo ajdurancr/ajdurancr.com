@@ -1,11 +1,11 @@
 import buildSiteMenu from './buildSiteMenu'
-import topMenu from '../mocks/contentful/topMenu'
+import menu from '../mocks/contentful/menu'
 import { siteMenuOutput } from '../mocks/formatted/siteMenu'
 
 describe('helpers/buildSiteMenu', () => {
-  it('returns TopMenu with menu items', () => {
+  it('returns Menu with menu items', () => {
     expect(
-      buildSiteMenu(topMenu.fields),
+      buildSiteMenu(menu.fields),
     ).toEqual(siteMenuOutput)
   })
 })
