@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo renders correctly default logo 1`] = `
+<Image
+  alt="logo "
+  className="container"
+  src="/images/logo/logo.svg"
+/>
+`;
+
+exports[`Logo renders correctly with className value 1`] = `
+<Image
+  alt="logo "
+  className="container testClassName"
+  src="/images/logo/logo.svg"
+/>
+`;
+
+exports[`Logo renders correctly, onlyIcon with default logo 1`] = `
+<Image
+  alt="icon "
+  className="container"
+  src="/images/logo/icon.svg"
+/>
+`;
+
+exports[`Logo renders correctly, onlyIcon with theme:dark 1`] = `
+<Image
+  alt="icon dark"
+  className="container"
+  src="/images/logo/icon-dark.svg"
+/>
+`;
+
+exports[`Logo renders correctly, onlyIcon with theme:light 1`] = `
+<Image
+  alt="icon light"
+  className="container"
+  src="/images/logo/icon-light.svg"
+/>
+`;
+
+exports[`Logo renders correctly, theme:dark 1`] = `
+<Image
+  alt="logo dark"
+  className="container"
+  src="/images/logo/logo-dark.svg"
+/>
+`;
+
+exports[`Logo renders correctly, theme:light 1`] = `
+<Image
+  alt="logo light"
+  className="container"
+  src="/images/logo/logo-light.svg"
+/>
+`;

@@ -3,7 +3,7 @@
 exports[`Component renders correctly 1`] = `
 <TestComponent
   componentDescription="This is a test component"
-  contentType="Test Component"
+  contentType="testComponent"
   markdownField="Test value"
   name="TestComponent"
   title="This is a test title"

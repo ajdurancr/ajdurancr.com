@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image renders correctly 1`] = `
+<div
+  className="container testClassName"
+>
+  <img
+    alt="Alternative text"
+    src="/test/image.svg"
+  />
+</div>
+`;

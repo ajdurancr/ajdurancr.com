@@ -20,11 +20,22 @@ export const getComponentsMap = () => {
   return componentsMap
 }
 
+const mapPropCta = ({ text, value }) => ({ text, link: value })
+const mapPropDefault = ({ value }) => value
+
+const customMapProps = {
+  propCta: mapPropCta,
+}
+
 export const mapProps = (cmsProps) => {
   const { props = [], ...initialProps } = get(cmsProps, 'fields', [])
+  return props.reduce((componentProps, { sys, fields }) => {
+    const mapPropFunc = customMapProps[get(sys, 'contentType.sys.id')] || mapPropDefault
+    const prop = mapPropFunc(fields)
 
-  return props.reduce((componentProps, { fields }) => ({
-    ...componentProps,
-    [fields.name]: fields.value,
-  }), { ...initialProps })
+    return ({
+      ...componentProps,
+      [fields.name]: prop,
+    })
+  }, { ...initialProps, contentType: camelCase(initialProps.contentType) })
 }

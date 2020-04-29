@@ -1,12 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Page renders correctly 1`] = `
-<Fragment>
-  <h1
-    className="title"
-  >
-    Test Page
-  </h1>
+<div
+  className="container"
+>
   <Section
     components={
       Array [
@@ -90,15 +87,11 @@ exports[`Page renders correctly 1`] = `
     key="sectionId"
     name="Main Section"
   />
-</Fragment>
+</div>
 `;
 
 exports[`Page renders correctly with default props 1`] = `
-<Fragment>
-  <h1
-    className="title"
-  >
-    Test Page
-  </h1>
-</Fragment>
+<div
+  className="container"
+/>
 `;

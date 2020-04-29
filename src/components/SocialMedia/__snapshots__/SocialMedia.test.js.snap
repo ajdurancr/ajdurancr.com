@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialMedia renders correctly 1`] = `
+<div
+  className="container"
+>
+  <Component
+    fields={
+      Object {
+        "contentType": "Social Media Link",
+        "name": "Social Media Link - ajdurancr - GitHub",
+        "props": Array [
+          Object {
+            "fields": Object {
+              "name": "icon",
+              "value": Object {
+                "fields": Object {
+                  "description": "Github Logo",
+                  "file": Object {
+                    "contentType": "image/jpeg",
+                    "details": Object {
+                      "image": Object {
+                        "height": 400,
+                        "width": 400,
+                      },
+                      "size": 11536,
+                    },
+                    "fileName": "GitHub_filename",
+                    "url": "//images.ctfassets.net/52uxn1pv2fou/5Yt9H0zn6ewSMnuvzh7V6P/3d6a253c1dce0250c70ef3a52c169872/github.jpg",
+                  },
+                  "title": "Media - GitHub Logo",
+                },
+                "sys": Object {
+                  "id": "5Yt9H0zn6ewSMnuvzh7V6P",
+                  "locale": "en-US",
+                },
+              },
+            },
+            "sys": Object {
+              "contentType": Object {
+                "sys": Object {
+                  "id": "propMedia",
+                },
+              },
+              "id": "3DOnmJjojmOqGUCwZVXcmZ",
+            },
+          },
+          Object {
+            "fields": Object {
+              "name": "cta",
+              "text": "GitHub",
+              "value": "https://github.com/ajdurancr",
+            },
+            "sys": Object {
+              "contentType": Object {
+                "sys": Object {
+                  "id": "propCta",
+                },
+              },
+              "id": "4c1KdByPrvFRuKMILrEayJ",
+            },
+          },
+        ],
+      }
+    }
+    key="7fb8b29Sx8xzEerHpUkFuC"
+    sys={
+      Object {
+        "contentType": Object {
+          "sys": Object {
+            "id": "component",
+          },
+        },
+        "id": "7fb8b29Sx8xzEerHpUkFuC",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`SocialMedia renders correctly, socialMediaLinks:falsy 1`] = `
+<div
+  className="container"
+/>
+`;

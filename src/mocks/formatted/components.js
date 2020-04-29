@@ -1,6 +1,6 @@
 export const componentProps = {
   name: 'TestComponent',
-  contentType: 'Test Component',
+  contentType: 'testComponent',
   componentDescription: 'This is a test component',
   title: 'This is a test title',
   children: [

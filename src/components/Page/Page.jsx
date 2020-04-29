@@ -4,13 +4,12 @@ import propTypes from 'prop-types'
 import { Section } from '..'
 import styles from './Page.styles.sass'
 
-const Page = ({ name, sections }) => (
-  <>
-    {Boolean(name) && <h1 className={styles.title}>{name}</h1>}
+const Page = ({ sections }) => (
+  <div className={styles.container}>
     {sections && sections.map(({ sys, fields }) => (
       <Section key={sys.id} {...fields} />
     ))}
-  </>
+  </div>
 )
 
 Page.defaultProps = {
@@ -20,7 +19,6 @@ Page.defaultProps = {
 
 Page.propTypes = {
   sections: propTypes.arrayOf(propTypes.object),
-  name: propTypes.string.isRequired,
   site: propTypes.shape({
     id: propTypes.number,
     name: propTypes.string,

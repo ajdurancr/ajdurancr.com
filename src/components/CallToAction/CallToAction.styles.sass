@@ -1,0 +1,28 @@
+@import '../../styles/_variables'
+  
+.header
+  display: flex
+  flex-direction: column
+  left: 0 
+  position: fixed
+  top: 0
+  width: 100%
+  margin: 0 3.2rem
+
+  @media only screen and (min-width: $size-tablet)
+    margin: 0 6.4rem
+
+.topMenu
+  display: flex
+  justify-content: space-between
+  min-height: 5rem
+  align-items: center
+  padding: 1.6rem 0
+
+  .logo
+    display: flex
+    max-width: 15rem
+
+    @media only screen and (min-width: $size-tablet)
+      max-width: 20rem
+
