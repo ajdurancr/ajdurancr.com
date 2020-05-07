@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero renders correctly 1`] = `
+<div
+  className="container testClassName"
+>
+  <div
+    className="imageContainer"
+    style={
+      Object {
+        "backgroundImage": "url(//images.ctfassets.net/52uxn1pv2fou/5Yt9H0zn6ewSMnuvzh7V6P/3d6a253c1dce0250c70ef3a52c169872/github.jpg)",
+      }
+    }
+  />
+</div>
+`;

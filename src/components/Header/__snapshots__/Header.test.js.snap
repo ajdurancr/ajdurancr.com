@@ -1,0 +1,670 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<div
+  className="header"
+>
+  <div
+    className="topMenu"
+  >
+    <Logo
+      className="logo"
+      onlyIcon={false}
+      theme="light"
+    />
+    <Component
+      testProp="test value"
+    />
+  </div>
+  <Menu
+    menu={
+      Object {
+        "name": "Top Menu",
+        "submenu": Array [
+          Object {
+            "fields": Object {
+              "alias": undefined,
+              "name": "Menu - DCR.IO Home Item",
+              "page": Object {
+                "fields": Object {
+                  "name": "Home",
+                  "sections": Array [
+                    Object {
+                      "fields": Object {
+                        "components": Array [
+                          Object {
+                            "fields": Object {
+                              "componentDescription": "This is a test component",
+                              "contentType": "Test Component",
+                              "name": "TestComponent",
+                              "props": Array [
+                                Object {
+                                  "fields": Object {
+                                    "name": "title",
+                                    "value": "This is a test title",
+                                  },
+                                  "sys": Object {
+                                    "contentType": Object {
+                                      "sys": Object {
+                                        "id": "propText",
+                                      },
+                                    },
+                                    "id": "74gEMnRKSOxejniOwjkHYN",
+                                  },
+                                },
+                                Object {
+                                  "fields": Object {
+                                    "name": "children",
+                                    "value": Array [
+                                      Object {
+                                        "fields": Object {
+                                          "componentDescription": "This is a child component",
+                                          "contentType": "Test Component",
+                                          "name": "ChildComponent",
+                                        },
+                                        "sys": Object {
+                                          "contentType": Object {
+                                            "sys": Object {
+                                              "id": "component",
+                                            },
+                                          },
+                                          "id": "4gfjlQfm3x9ShZKO8gdYqx",
+                                        },
+                                      },
+                                    ],
+                                  },
+                                  "sys": Object {
+                                    "contentType": Object {
+                                      "sys": Object {
+                                        "id": "propComponents",
+                                      },
+                                    },
+                                    "id": "3hwiQ7OcvmctEdQPye6exu",
+                                  },
+                                },
+                                Object {
+                                  "fields": Object {
+                                    "name": "markdownField",
+                                    "value": "Test value",
+                                  },
+                                  "sys": Object {
+                                    "contentType": Object {
+                                      "sys": Object {
+                                        "id": "propMarkdown",
+                                      },
+                                    },
+                                    "id": "1RezpPBXf2buGYIccqQw0i",
+                                  },
+                                },
+                              ],
+                            },
+                            "sys": Object {
+                              "contentType": Object {
+                                "sys": Object {
+                                  "id": "component",
+                                },
+                              },
+                              "id": "6neuJJsr2mbdKli0VjWnCn",
+                            },
+                          },
+                        ],
+                        "name": "Main Section",
+                      },
+                      "sys": Object {
+                        "id": "sectionId",
+                      },
+                    },
+                  ],
+                  "url": "/",
+                },
+              },
+              "submenu": undefined,
+              "url": undefined,
+            },
+          },
+          Object {
+            "fields": Object {
+              "alias": undefined,
+              "name": "Menu - DCR.IO Blog",
+              "page": Object {
+                "fields": Object {
+                  "name": "Blog",
+                  "sections": Array [
+                    Object {
+                      "fields": Object {
+                        "components": Array [
+                          Object {
+                            "fields": Object {
+                              "componentDescription": "This is a test component",
+                              "contentType": "Test Component",
+                              "name": "TestComponent",
+                              "props": Array [
+                                Object {
+                                  "fields": Object {
+                                    "name": "title",
+                                    "value": "This is a test title",
+                                  },
+                                  "sys": Object {
+                                    "contentType": Object {
+                                      "sys": Object {
+                                        "id": "propText",
+                                      },
+                                    },
+                                    "id": "74gEMnRKSOxejniOwjkHYN",
+                                  },
+                                },
+                                Object {
+                                  "fields": Object {
+                                    "name": "children",
+                                    "value": Array [
+                                      Object {
+                                        "fields": Object {
+                                          "componentDescription": "This is a child component",
+                                          "contentType": "Test Component",
+                                          "name": "ChildComponent",
+                                        },
+                                        "sys": Object {
+                                          "contentType": Object {
+                                            "sys": Object {
+                                              "id": "component",
+                                            },
+                                          },
+                                          "id": "4gfjlQfm3x9ShZKO8gdYqx",
+                                        },
+                                      },
+                                    ],
+                                  },
+                                  "sys": Object {
+                                    "contentType": Object {
+                                      "sys": Object {
+                                        "id": "propComponents",
+                                      },
+                                    },
+                                    "id": "3hwiQ7OcvmctEdQPye6exu",
+                                  },
+                                },
+                                Object {
+                                  "fields": Object {
+                                    "name": "markdownField",
+                                    "value": "Test value",
+                                  },
+                                  "sys": Object {
+                                    "contentType": Object {
+                                      "sys": Object {
+                                        "id": "propMarkdown",
+                                      },
+                                    },
+                                    "id": "1RezpPBXf2buGYIccqQw0i",
+                                  },
+                                },
+                              ],
+                            },
+                            "sys": Object {
+                              "contentType": Object {
+                                "sys": Object {
+                                  "id": "component",
+                                },
+                              },
+                              "id": "6neuJJsr2mbdKli0VjWnCn",
+                            },
+                          },
+                        ],
+                        "name": "Main Section",
+                      },
+                      "sys": Object {
+                        "id": "sectionId",
+                      },
+                    },
+                  ],
+                  "url": "/blog",
+                },
+              },
+              "submenu": undefined,
+              "url": undefined,
+            },
+          },
+          Object {
+            "fields": Object {
+              "alias": undefined,
+              "name": "Menu - DCR.IO Resume",
+              "page": Object {
+                "fields": Object {
+                  "name": "Resume",
+                  "sections": undefined,
+                  "url": "/resume",
+                },
+              },
+              "submenu": Array [
+                Object {
+                  "fields": Object {
+                    "alias": undefined,
+                    "name": "Menu - DCR.IO Resume / Education",
+                    "page": Object {
+                      "fields": Object {
+                        "name": "Education",
+                        "sections": Array [
+                          Object {
+                            "fields": Object {
+                              "components": Array [
+                                Object {
+                                  "fields": Object {
+                                    "componentDescription": "This is a test component",
+                                    "contentType": "Test Component",
+                                    "name": "TestComponent",
+                                    "props": Array [
+                                      Object {
+                                        "fields": Object {
+                                          "name": "title",
+                                          "value": "This is a test title",
+                                        },
+                                        "sys": Object {
+                                          "contentType": Object {
+                                            "sys": Object {
+                                              "id": "propText",
+                                            },
+                                          },
+                                          "id": "74gEMnRKSOxejniOwjkHYN",
+                                        },
+                                      },
+                                      Object {
+                                        "fields": Object {
+                                          "name": "children",
+                                          "value": Array [
+                                            Object {
+                                              "fields": Object {
+                                                "componentDescription": "This is a child component",
+                                                "contentType": "Test Component",
+                                                "name": "ChildComponent",
+                                              },
+                                              "sys": Object {
+                                                "contentType": Object {
+                                                  "sys": Object {
+                                                    "id": "component",
+                                                  },
+                                                },
+                                                "id": "4gfjlQfm3x9ShZKO8gdYqx",
+                                              },
+                                            },
+                                          ],
+                                        },
+                                        "sys": Object {
+                                          "contentType": Object {
+                                            "sys": Object {
+                                              "id": "propComponents",
+                                            },
+                                          },
+                                          "id": "3hwiQ7OcvmctEdQPye6exu",
+                                        },
+                                      },
+                                      Object {
+                                        "fields": Object {
+                                          "name": "markdownField",
+                                          "value": "Test value",
+                                        },
+                                        "sys": Object {
+                                          "contentType": Object {
+                                            "sys": Object {
+                                              "id": "propMarkdown",
+                                            },
+                                          },
+                                          "id": "1RezpPBXf2buGYIccqQw0i",
+                                        },
+                                      },
+                                    ],
+                                  },
+                                  "sys": Object {
+                                    "contentType": Object {
+                                      "sys": Object {
+                                        "id": "component",
+                                      },
+                                    },
+                                    "id": "6neuJJsr2mbdKli0VjWnCn",
+                                  },
+                                },
+                              ],
+                              "name": "Main Section",
+                            },
+                            "sys": Object {
+                              "id": "sectionId",
+                            },
+                          },
+                        ],
+                        "url": "/resume/education",
+                      },
+                    },
+                    "submenu": undefined,
+                    "url": undefined,
+                  },
+                },
+                Object {
+                  "fields": Object {
+                    "alias": undefined,
+                    "name": "Menu - DCR.IO Resume / Work Experience",
+                    "page": Object {
+                      "fields": Object {
+                        "name": "Work Experience",
+                        "sections": Array [
+                          Object {
+                            "fields": Object {
+                              "components": Array [
+                                Object {
+                                  "fields": Object {
+                                    "componentDescription": "This is a test component",
+                                    "contentType": "Test Component",
+                                    "name": "TestComponent",
+                                    "props": Array [
+                                      Object {
+                                        "fields": Object {
+                                          "name": "title",
+                                          "value": "This is a test title",
+                                        },
+                                        "sys": Object {
+                                          "contentType": Object {
+                                            "sys": Object {
+                                              "id": "propText",
+                                            },
+                                          },
+                                          "id": "74gEMnRKSOxejniOwjkHYN",
+                                        },
+                                      },
+                                      Object {
+                                        "fields": Object {
+                                          "name": "children",
+                                          "value": Array [
+                                            Object {
+                                              "fields": Object {
+                                                "componentDescription": "This is a child component",
+                                                "contentType": "Test Component",
+                                                "name": "ChildComponent",
+                                              },
+                                              "sys": Object {
+                                                "contentType": Object {
+                                                  "sys": Object {
+                                                    "id": "component",
+                                                  },
+                                                },
+                                                "id": "4gfjlQfm3x9ShZKO8gdYqx",
+                                              },
+                                            },
+                                          ],
+                                        },
+                                        "sys": Object {
+                                          "contentType": Object {
+                                            "sys": Object {
+                                              "id": "propComponents",
+                                            },
+                                          },
+                                          "id": "3hwiQ7OcvmctEdQPye6exu",
+                                        },
+                                      },
+                                      Object {
+                                        "fields": Object {
+                                          "name": "markdownField",
+                                          "value": "Test value",
+                                        },
+                                        "sys": Object {
+                                          "contentType": Object {
+                                            "sys": Object {
+                                              "id": "propMarkdown",
+                                            },
+                                          },
+                                          "id": "1RezpPBXf2buGYIccqQw0i",
+                                        },
+                                      },
+                                    ],
+                                  },
+                                  "sys": Object {
+                                    "contentType": Object {
+                                      "sys": Object {
+                                        "id": "component",
+                                      },
+                                    },
+                                    "id": "6neuJJsr2mbdKli0VjWnCn",
+                                  },
+                                },
+                              ],
+                              "name": "Main Section",
+                            },
+                            "sys": Object {
+                              "id": "sectionId",
+                            },
+                          },
+                        ],
+                        "url": "/resume/work-experience",
+                      },
+                    },
+                    "submenu": undefined,
+                    "url": undefined,
+                  },
+                },
+              ],
+              "url": undefined,
+            },
+          },
+          Object {
+            "fields": Object {
+              "alias": undefined,
+              "name": "Menu - DCR.IO Portfolio",
+              "page": Object {
+                "fields": Object {
+                  "name": "Portfolio",
+                  "sections": Array [
+                    Object {
+                      "fields": Object {
+                        "components": Array [
+                          Object {
+                            "fields": Object {
+                              "componentDescription": "This is a test component",
+                              "contentType": "Test Component",
+                              "name": "TestComponent",
+                              "props": Array [
+                                Object {
+                                  "fields": Object {
+                                    "name": "title",
+                                    "value": "This is a test title",
+                                  },
+                                  "sys": Object {
+                                    "contentType": Object {
+                                      "sys": Object {
+                                        "id": "propText",
+                                      },
+                                    },
+                                    "id": "74gEMnRKSOxejniOwjkHYN",
+                                  },
+                                },
+                                Object {
+                                  "fields": Object {
+                                    "name": "children",
+                                    "value": Array [
+                                      Object {
+                                        "fields": Object {
+                                          "componentDescription": "This is a child component",
+                                          "contentType": "Test Component",
+                                          "name": "ChildComponent",
+                                        },
+                                        "sys": Object {
+                                          "contentType": Object {
+                                            "sys": Object {
+                                              "id": "component",
+                                            },
+                                          },
+                                          "id": "4gfjlQfm3x9ShZKO8gdYqx",
+                                        },
+                                      },
+                                    ],
+                                  },
+                                  "sys": Object {
+                                    "contentType": Object {
+                                      "sys": Object {
+                                        "id": "propComponents",
+                                      },
+                                    },
+                                    "id": "3hwiQ7OcvmctEdQPye6exu",
+                                  },
+                                },
+                                Object {
+                                  "fields": Object {
+                                    "name": "markdownField",
+                                    "value": "Test value",
+                                  },
+                                  "sys": Object {
+                                    "contentType": Object {
+                                      "sys": Object {
+                                        "id": "propMarkdown",
+                                      },
+                                    },
+                                    "id": "1RezpPBXf2buGYIccqQw0i",
+                                  },
+                                },
+                              ],
+                            },
+                            "sys": Object {
+                              "contentType": Object {
+                                "sys": Object {
+                                  "id": "component",
+                                },
+                              },
+                              "id": "6neuJJsr2mbdKli0VjWnCn",
+                            },
+                          },
+                        ],
+                        "name": "Main Section",
+                      },
+                      "sys": Object {
+                        "id": "sectionId",
+                      },
+                    },
+                  ],
+                  "url": "/portfolio",
+                },
+              },
+              "submenu": undefined,
+              "url": undefined,
+            },
+          },
+          Object {
+            "fields": Object {
+              "alias": undefined,
+              "name": "Menu - DCR.IO About",
+              "page": Object {
+                "fields": Object {
+                  "name": "About",
+                  "sections": Array [
+                    Object {
+                      "fields": Object {
+                        "components": Array [
+                          Object {
+                            "fields": Object {
+                              "componentDescription": "This is a test component",
+                              "contentType": "Test Component",
+                              "name": "TestComponent",
+                              "props": Array [
+                                Object {
+                                  "fields": Object {
+                                    "name": "title",
+                                    "value": "This is a test title",
+                                  },
+                                  "sys": Object {
+                                    "contentType": Object {
+                                      "sys": Object {
+                                        "id": "propText",
+                                      },
+                                    },
+                                    "id": "74gEMnRKSOxejniOwjkHYN",
+                                  },
+                                },
+                                Object {
+                                  "fields": Object {
+                                    "name": "children",
+                                    "value": Array [
+                                      Object {
+                                        "fields": Object {
+                                          "componentDescription": "This is a child component",
+                                          "contentType": "Test Component",
+                                          "name": "ChildComponent",
+                                        },
+                                        "sys": Object {
+                                          "contentType": Object {
+                                            "sys": Object {
+                                              "id": "component",
+                                            },
+                                          },
+                                          "id": "4gfjlQfm3x9ShZKO8gdYqx",
+                                        },
+                                      },
+                                    ],
+                                  },
+                                  "sys": Object {
+                                    "contentType": Object {
+                                      "sys": Object {
+                                        "id": "propComponents",
+                                      },
+                                    },
+                                    "id": "3hwiQ7OcvmctEdQPye6exu",
+                                  },
+                                },
+                                Object {
+                                  "fields": Object {
+                                    "name": "markdownField",
+                                    "value": "Test value",
+                                  },
+                                  "sys": Object {
+                                    "contentType": Object {
+                                      "sys": Object {
+                                        "id": "propMarkdown",
+                                      },
+                                    },
+                                    "id": "1RezpPBXf2buGYIccqQw0i",
+                                  },
+                                },
+                              ],
+                            },
+                            "sys": Object {
+                              "contentType": Object {
+                                "sys": Object {
+                                  "id": "component",
+                                },
+                              },
+                              "id": "6neuJJsr2mbdKli0VjWnCn",
+                            },
+                          },
+                        ],
+                        "name": "Main Section",
+                      },
+                      "sys": Object {
+                        "id": "sectionId",
+                      },
+                    },
+                  ],
+                  "url": "/about",
+                },
+              },
+              "submenu": undefined,
+              "url": undefined,
+            },
+          },
+          Object {
+            "fields": Object {
+              "alias": undefined,
+              "name": "Menu - DCR.IO External link",
+              "page": undefined,
+              "submenu": undefined,
+              "url": "http://www.google.com",
+            },
+          },
+          Object {
+            "fields": Object {
+              "alias": "Google",
+              "name": "Menu - DCR.IO External link with alias",
+              "page": undefined,
+              "submenu": undefined,
+              "url": "http://www.google.com",
+            },
+          },
+        ],
+      }
+    }
+    pageUrl="/test-url"
+  />
+</div>
+`;

@@ -1,3 +1,5 @@
+@import '../../styles/_variables'
+  
 .menu
   width: 100%
 
@@ -15,10 +17,11 @@
     box-sizing: border-box
     
     &, &:visited
-      color: black
+      color: $color-white
 
     &:hover
-      color: red
+      color: $color-green-forest
 
   .activeItem > a
-    border-color: red
+    color: $color-green-forest
+    border-color: $color-green-forest

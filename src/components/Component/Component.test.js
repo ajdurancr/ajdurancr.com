@@ -3,6 +3,13 @@ import { shallow } from 'enzyme'
 
 import Component from './Component'
 import { component } from '../../mocks/contentful/components'
+import * as componentsHelper from '../../helpers/components'
+
+const TestComponent = () => <div>Test Component</div>
+
+componentsHelper.getComponentsMap = () => ({
+  testComponent: TestComponent,
+})
 
 describe('Component', () => {
   it('renders correctly', () => {
