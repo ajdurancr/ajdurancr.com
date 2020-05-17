@@ -3,19 +3,29 @@ import propTypes from 'prop-types'
 import get from 'lodash.get'
 
 import { Image } from '..'
-import styles from './SocialMediaLink.styles.sass'
+import { getImageThemeSuffix } from '../../helpers/appTheme'
+import useAppTheme from '../../hooks/useAppTheme'
+import styles from './SocialMediaLink.module.sass'
 
-const SocialMediaLink = ({ cta, icon }) => cta && icon && (
-  <a href={get(cta, 'link')} className={styles.link}>
-    <Image
-      src={get(icon, 'fields.file.url')}
-      alt={get(cta, 'text')}
-    />
-  </a>
-)
+const SocialMediaLink = ({ cta, icon }) => {
+  const appTheme = useAppTheme()
+
+  if (!cta && icon) return null
+
+  const imageSuffix = getImageThemeSuffix(appTheme)
+
+  return (
+    <a href={get(cta, 'link')} className={styles.link}>
+      <Image
+        src={`/images/${icon}${imageSuffix}.svg`}
+        alt={get(cta, 'text')}
+      />
+    </a>
+  )
+}
 
 SocialMediaLink.propTypes = {
-  icon: propTypes.object.isRequired,
+  icon: propTypes.string.isRequired,
   cta: propTypes.shape({
     link: propTypes.string.isRequired,
     text: propTypes.string.isRequired,

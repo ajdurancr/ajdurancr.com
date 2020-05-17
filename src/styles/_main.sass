@@ -1,11 +1,12 @@
 @import '_variables'
+@import '_appTheme'
 
-html 
+html
   font-size: 62.5%
-  body 
-    background-color: $color-black-raisin
-    color: $color-black-raisin
+
+  body
     font-family: sans-serif
     font-size: 1.6rem
     margin: 0
-  
+
+    @extend %appTheme

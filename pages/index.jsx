@@ -1,20 +1,17 @@
 import React from 'react'
-import propTypes from 'prop-types'
+import Cookies from 'cookie-universal'
 
 import { Page } from '../src/components'
+import themes from '../src/constants/appTheme'
+import { APP_THEME_COOKIE_NAME } from '../src/constants/cookies'
 
 const NextPage = (props) => <Page {...props} />
 
-NextPage.getInitialProps = async ({ query }) => ({ ...query })
+NextPage.getInitialProps = async ({ query, req, res }) => {
+  const cookies = Cookies(req, res)
+  const { [APP_THEME_COOKIE_NAME]: appTheme = themes.DEFAULT } = cookies.getAll()
 
-NextPage.propTypes = {
-  sections: propTypes.arrayOf(propTypes.object),
-  site: propTypes.object,
-}
-
-NextPage.defaultProps = {
-  sections: [],
-  site: {},
+  return { ...query, appTheme }
 }
 
 export default NextPage

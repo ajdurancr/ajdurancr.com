@@ -3,7 +3,7 @@ import propTypes from 'prop-types'
 import classnames from 'classnames'
 import get from 'lodash.get'
 
-import styles from './Hero.styles.sass'
+import styles from './Hero.module.sass'
 
 const Hero = ({ className, image }) => (
   <div className={classnames(styles.container, className)}>

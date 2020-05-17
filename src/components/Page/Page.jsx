@@ -2,7 +2,7 @@ import React from 'react'
 import propTypes from 'prop-types'
 
 import { Section } from '..'
-import styles from './Page.styles.sass'
+import styles from './Page.module.sass'
 
 const Page = ({ sections }) => (
   <div className={styles.container}>

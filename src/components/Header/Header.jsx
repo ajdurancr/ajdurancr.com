@@ -1,17 +1,20 @@
 import React from 'react'
 import propTypes from 'prop-types'
+import classnames from 'classnames'
 import get from 'lodash.get'
 
 import { Logo, Menu, Component } from '..'
-import styles from './Header.styles.sass'
+import styles from './Header.module.sass'
 
 const Header = ({ pageUrl, menu, socialMedia }) => (
-  <div className={styles.header}>
-    <div className={styles.topMenu}>
-      <Logo className={styles.logo} theme="light" />
-      <Component {...(socialMedia)} />
+  <div className={classnames(styles.header, 'header')}>
+    <div className={styles.container}>
+      <div className={styles.topMenu}>
+        <Logo className={styles.logo} />
+        <Component {...(socialMedia)} />
+      </div>
+      <Menu pageUrl={pageUrl} menu={get(menu, 'fields')} />
     </div>
-    <Menu pageUrl={pageUrl} menu={get(menu, 'fields')} />
   </div>
 )
 

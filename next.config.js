@@ -1,6 +1,5 @@
 require('dotenv').config()
 
-const withSass = require('@zeit/next-sass')
 const get = require('lodash.get')
 const contentful = require('./src/helpers/contentful')
 const buildSitePages = require('./src/helpers/buildSitePages')
@@ -18,9 +17,8 @@ const exportPathMap = async () => {
 }
 
 const config = {
-  cssModules: true,
   exportTrailingSlash: true,
   exportPathMap,
 }
 
-module.exports = withSass(config)
+module.exports = config

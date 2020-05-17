@@ -1,0 +1,54 @@
+@import '_variables'
+// theme colors
+$defaultColors: ("primary": $color-white, "secondary": $color-green-ming, "menuPrimary": $color-white, "menuSecondary": $color-green-forest, "backgroundColor": $color-black-eerie)
+$lightColors: ("primary": $color-black-eerie, "secondary": $color-green-forest, "menuPrimary": $color-white, "menuSecondary": $color-green-ming, "backgroundColor": $color-white)
+
+// theme
+$defaultTheme: ("name": "default", "colors": $defaultColors)
+$lightTheme: ("name": "light", "colors": $lightColors)
+
+$themes: ($defaultTheme, $lightTheme)
+
+@mixin themeStyles($themeColors)
+  // color variables
+  $primaryColor: map-get($themeColors, "primary")
+  $secondaryColor: map-get($themeColors, "secondary")
+  $menuPrimaryColor: map-get($themeColors, "menuPrimary")
+  $menuSecondaryColor: map-get($themeColors, "menuSecondary")
+
+  background-color: map-get($themeColors, "backgroundColor")
+  color: $primaryColor
+  min-height: 100vh
+  width: 100%
+
+  svg
+    path
+      fill: $primaryColor
+  a
+    &, &:visited
+      color: $primaryColor
+
+    &:hover
+      color: $secondaryColor
+
+  .header
+    background-color: rgba(70, 83, 98, 0.2) // black-coral with opacity 0.2
+    color: $menuPrimaryColor
+    a
+      &, &:visited
+        color: $menuPrimaryColor
+
+      &:hover
+        color: $menuSecondaryColor
+
+    .activeMenuItem > a
+      color: $menuSecondaryColor
+      border-color: $menuSecondaryColor
+
+@mixin generateThemes()
+  @each $theme in $themes
+    .theme-#{map-get($theme, "name")}
+      @include themeStyles(map-get($theme, "colors"))
+  
+%appTheme
+  @include generateThemes()

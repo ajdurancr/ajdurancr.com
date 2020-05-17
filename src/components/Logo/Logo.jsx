@@ -3,16 +3,21 @@ import propTypes from 'prop-types'
 import classnames from 'classnames'
 
 import { Image } from '..'
-import styles from './Logo.styles.sass'
+import appThemeMap from '../../constants/appTheme'
+import { getImageThemeSuffix } from '../../helpers/appTheme'
+import useAppTheme from '../../hooks/useAppTheme'
+import styles from './Logo.module.sass'
 
-const Logo = ({ className, onlyIcon, theme }) => {
+const Logo = ({ className, onlyIcon }) => {
+  const appTheme = useAppTheme()
   const rootUrl = onlyIcon ? 'icon' : 'logo'
+  const imageSuffix = getImageThemeSuffix(appTheme, { [appThemeMap.GOLD]: '-gold' })
 
   return (
     <Image
       className={classnames(styles.container, className)}
-      src={`/images/logo/${rootUrl}${theme && `-${theme}`}.svg`}
-      alt={`${rootUrl} ${theme}`}
+      src={`/images/logo/${rootUrl}${imageSuffix}.svg`}
+      alt={`${rootUrl}${imageSuffix.replace('-', ' ')}`}
     />
 
   )
@@ -21,13 +26,11 @@ const Logo = ({ className, onlyIcon, theme }) => {
 Logo.defaultProps = {
   className: '',
   onlyIcon: false,
-  theme: '',
 }
 
 Logo.propTypes = {
   className: propTypes.string,
   onlyIcon: propTypes.bool,
-  theme: propTypes.string,
 }
 
 export default Logo

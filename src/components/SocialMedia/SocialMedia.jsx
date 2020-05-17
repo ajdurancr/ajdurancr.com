@@ -3,7 +3,7 @@ import propTypes from 'prop-types'
 import get from 'lodash.get'
 
 import { Component } from '..'
-import styles from './SocialMedia.styles.sass'
+import styles from './SocialMedia.module.sass'
 
 const SocialMedia = ({ socialMediaLinks }) => (
   <div className={styles.container}>

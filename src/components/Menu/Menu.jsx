@@ -6,7 +6,7 @@ import buildSiteMenu from '../../helpers/buildSiteMenu'
 import { getParentPageUrl } from '../../helpers/url'
 
 import SubMenu from './SubMenu'
-import styles from './Menu.styles.sass'
+import styles from './Menu.module.sass'
 
 const Menu = ({ menu, pageUrl }) => {
   const [parentPageUrl, setParentPageUrl] = useState(getParentPageUrl(pageUrl))
@@ -24,7 +24,7 @@ const Menu = ({ menu, pageUrl }) => {
     <nav className={styles.menu}>
       <ul>
         {menuItems.map(({ name, url, submenu }) => (
-          <li className={classnames({ [styles.activeItem]: parentPageUrl === url })} key={url}>
+          <li className={classnames({ activeMenuItem: parentPageUrl === url })} key={url}>
             <a href={url}>{name}</a>
             {submenu && <SubMenu submenu={submenu} />}
           </li>

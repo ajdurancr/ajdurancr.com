@@ -2,37 +2,21 @@
 
 exports[`Logo renders correctly default logo 1`] = `
 <Image
-  alt="logo "
+  alt="logo light"
   className="container"
-  src="/images/logo/logo.svg"
+  src="/images/logo/logo-light.svg"
 />
 `;
 
 exports[`Logo renders correctly with className value 1`] = `
 <Image
-  alt="logo "
+  alt="logo light"
   className="container testClassName"
-  src="/images/logo/logo.svg"
+  src="/images/logo/logo-light.svg"
 />
 `;
 
 exports[`Logo renders correctly, onlyIcon with default logo 1`] = `
-<Image
-  alt="icon "
-  className="container"
-  src="/images/logo/icon.svg"
-/>
-`;
-
-exports[`Logo renders correctly, onlyIcon with theme:dark 1`] = `
-<Image
-  alt="icon dark"
-  className="container"
-  src="/images/logo/icon-dark.svg"
-/>
-`;
-
-exports[`Logo renders correctly, onlyIcon with theme:light 1`] = `
 <Image
   alt="icon light"
   className="container"
@@ -40,18 +24,42 @@ exports[`Logo renders correctly, onlyIcon with theme:light 1`] = `
 />
 `;
 
+exports[`Logo renders correctly, onlyIcon with theme:dark 1`] = `
+<Image
+  alt="icon light"
+  className="container"
+  src="/images/logo/icon-light.svg"
+/>
+`;
+
+exports[`Logo renders correctly, onlyIcon with theme:light 1`] = `
+<Image
+  alt="icon"
+  className="container"
+  src="/images/logo/icon.svg"
+/>
+`;
+
 exports[`Logo renders correctly, theme:dark 1`] = `
 <Image
-  alt="logo dark"
+  alt="logo light"
   className="container"
-  src="/images/logo/logo-dark.svg"
+  src="/images/logo/logo-light.svg"
+/>
+`;
+
+exports[`Logo renders correctly, theme:gold 1`] = `
+<Image
+  alt="logo gold"
+  className="container"
+  src="/images/logo/logo-gold.svg"
 />
 `;
 
 exports[`Logo renders correctly, theme:light 1`] = `
 <Image
-  alt="logo light"
+  alt="logo"
   className="container"
-  src="/images/logo/logo-light.svg"
+  src="/images/logo/logo.svg"
 />
 `;

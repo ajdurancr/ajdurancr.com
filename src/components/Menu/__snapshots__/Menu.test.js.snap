@@ -6,7 +6,7 @@ exports[`Menu renders correctly 1`] = `
 >
   <ul>
     <li
-      className="activeItem"
+      className="activeMenuItem"
       key="/"
     >
       <a
@@ -121,7 +121,7 @@ exports[`Menu renders correctly when submenu item selected 1`] = `
       </a>
     </li>
     <li
-      className="activeItem"
+      className="activeMenuItem"
       key="/resume"
     >
       <a
