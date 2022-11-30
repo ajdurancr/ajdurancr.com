@@ -1,5 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Section renders correctly 1`] = `<Fragment />`;
-
-exports[`Section renders correctly with default props 1`] = `<Fragment />`;

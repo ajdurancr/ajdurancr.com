@@ -1,7 +1,5 @@
 # ajdurancr.com
-This is a personal project running on [ajdurancr.com](https://ajdurancr.com/) and built using [React](https://reactjs.org/), [Next.JS](https://nextjs.org/), [Jest](https://jestjs.io/), [Enzyme](https://airbnb.io/enzyme/) and [Contentful](https://www.contentful.com/).
-
-The coding style used in this repo is based on Airbnb Style Guide for JavaScript and React.
+This is a project built with [React](https://reactjs.org/), [Next.JS](https://nextjs.org/) and [Contentful](https://www.contentful.com/).
 
 ## Getting Started
 In order to start this project it is necessary to go through the following steps:
